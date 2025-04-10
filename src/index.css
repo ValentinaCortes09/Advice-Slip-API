@@ -1,0 +1,115 @@
+/* Estilos base para modo oscuro */
+:root {
+  --bg-color: #121212;
+  --surface-color: #1e1e1e;
+  --primary-color: #00bcd4;
+  --text-color: #e0e0e0;
+  --accent-color: #ff4081;
+  --border-color: #333;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Enlaces generales */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor general */
+.container {
+  padding: 20px;
+  padding-bottom: 80px; /* espacio para bottom nav */
+}
+
+/* Navegación inferior */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--surface-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid var(--border-color);
+  z-index: 999;
+}
+
+.bottom-nav a {
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.bottom-nav a.active {
+  color: var(--primary-color);
+}
+
+/* Botones */
+button {
+  background-color: var(--primary-color);
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #00acc1;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="search"] {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Compartir */
+.share-buttons a {
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  padding: 8px 12px;
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  font-size: 0.9rem;
+  border: 1px solid var(--border-color);
+}
+
+.share-buttons a:hover {
+  background-color: var(--primary-color);
+  color: black;
+}
+
+/* Sombra general */
+.card {
+  background-color: var(--surface-color);
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
