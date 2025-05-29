@@ -8,6 +8,9 @@ const BottomNav = () => {
       <NavLink to="/search" style={styles.link}>Buscar</NavLink>
       <NavLink to="/favorites" style={styles.link}>Favoritos</NavLink>
       <NavLink to="/profile" style={styles.link}>Perfil</NavLink>
+      <NavLink to="/surprise" style={styles.link}>surprise</NavLink>
+      <NavLink to="/About" style={styles.link}>About</NavLink>
+      <NavLink to="/usuario" style={styles.link}>Usuario</NavLink>
     </nav>
   );
 };
