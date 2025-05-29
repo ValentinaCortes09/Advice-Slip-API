@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getFavorites, removeFromFavorites } from '../utils/favorites';
 
+
 const Favorites = () => {
   const [favorites, setFavorites] = useState([]);
 
